@@ -1,8 +1,10 @@
 .traffic-light{
-    display: inline-block;
     padding: 10px;
     background-color: black;
-    margin: auto;
+    margin-left: 100px;
+    margin-top: 50px;
+    display: inline-block;
+    border-radius: 15px;
 }
 .light{
     width: 100px;
