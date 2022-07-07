@@ -5,20 +5,20 @@ import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
 const TrafficLight = () => {
-	const [ selectedColor, setSelectedColor] = useState("red");
+	const [ selectedColor, setSelectedColor] = useState("");
 	return (
 		<div className="traffic-light">
 			<div
 				onClick={() => setSelectedColor("red")}
-				class={"light red"+((selectedColor === "red") ? "glow" : "")
+				className={"light red"+((selectedColor === "red") ? "glow" : "")
 			}></div>
 			<div
 				onClick={() => setSelectedColor("yellow")}
-			 	class={"light yellow"+((selectedColor === "yellow") ? "glow" : "")
+			 	className={"light yellow"+((selectedColor === "yellow") ? "glow" : "")
 			}></div>
 			<div
 				onClick={() => setSelectedColor("green")}
-			 	class={"light green"+((selectedColor === "green") ? "glow" : "")
+			 	className={"light green"+((selectedColor === "green") ? "glow" : "")
 			}></div>
 		</div>
 	);
